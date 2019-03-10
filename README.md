@@ -39,6 +39,11 @@ It seems posible to decode the FOTA file and get the real binaries if you can ge
 
 The process of Firmware Update are initiated by an JSON request to the module
 
+### - Json API Methods
+
+Page with details and examples of [JSon Requests](jsonapi.md) to control the module
+
+
 ### - URL Of Interests
 
 * Photos, serial connection, and information in how to setup the module to connect to an custom MQTT Server

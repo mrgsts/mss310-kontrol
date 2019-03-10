@@ -49,6 +49,20 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 
 ```
 
+- **Get Watt Usage**
+
+   Curl "GET","namespace":"Appliance.Control.ConsumptionX"
+
+*Payload Data*
+```
+{"header":{"from":"/app/**********/subscribe","messageId":"ad28fcb13f6382d1018813fee3269687","method":"GET","namespace":"Appliance.Control.Electricity","payloadVersion":1,"sign":"*********","timestamp":1552121060},"payload":{}}
+```
+
+*Response Data*
+```json
+{"header":{"messageId":"**********","namespace":"Appliance.Control.Electricity","method":"GETACK","payloadVersion":1,"from":"/appliance/**********/publish","timestamp":1552219948,"timestampMs":771,"sign":"**********"},"payload":{"electricity":{"channel":0,"current":174,"voltage":2368,"power":13058}}}
+```
+
 - **Set module MQTT config** if you have setup your MQTT custom server before, look at [mqtt-config.md](mqtt-config.md)
 
    Curl "SET","namespace":"Appliance.Config.Key"

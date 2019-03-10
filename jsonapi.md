@@ -44,5 +44,5 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 
 *Payload data*
 ```json
-{ "key": { "gateway": { "host": "192.100.100.1", "port": 8883, "secondHost": "192.100.100.1", "secondPort": "8883"}, "key": "02d05e1b23b286dfdb422249bc867a70", "userId": "******" }}
+{ "key": { "gateway": { "host": "192.100.100.1", "port": 8883, "secondHost": "192.100.100.1", "secondPort": "8883"}, "key": "**********", "userId": "******" }}
 ```

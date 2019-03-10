@@ -41,16 +41,16 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 ```
 - **Get All module config values**
 
-   Curl "GET","namespace":Appliance.System.All"
+   ```Curl "GET","namespace":Appliance.System.All"```
 
 *Response data*
 ```json
 {"header":{"messageId":"**********","namespace":"Appliance.System.All","method":"GETACK","payloadVersion":1,"from":"/appliance/**********/publish","timestamp":1552217703,"timestampMs":195,"sign":"*********"},"payload":{"all":{"system":{"hardware":{"type":"mss310","subType":"us","version":"2.0.0","chipType":"mt7682","uuid":"**********","macAddress":"AA:BB:CC:DD:EE:FF"},"firmware":{"version":"2.1.9","compileTime":"2018/12/18 17:16:47 GMT +08:00","wifiMac":"AA:BB:CC:DD:EE:FF","innerIp":"192.168.100.10","server":"iot.meross.com","port":2001,"userId":"******"},"time":{"timestamp":1552217703,"timezone":"Europe/Madrid","timeRule":[[1540688400,3600,0],[1553994000,7200,1],[1572138000,3600,0],[1585443600,7200,1],[1603587600,3600,0],[1616893200,7200,1],[1635642000,3600,0],[1648342800,7200,1],[1667091600,3600,0],[1679792400,7200,1],[1698541200,3600,0],[1711846800,7200,1],[1729990800,3600,0],[1743296400,7200,1],[1761440400,3600,0],[1774746000,7200,1],[1792890000,3600,0],[1806195600,7200,1],[1824944400,3600,0],[1837645200,7200,1]]},"online":{"status":1}},"digest":{"togglex":[{"channel":0,"onoff":0,"lmTime":1552176889}],"triggerx":[],"timerx":[]}}}}
-
 ```
+
 - **Trigger ON the power relay**
 
-      Curl "SET","namespace":"Appliance.Control.ToggleX"
+   ```Curl "SET","namespace":"Appliance.Control.ToggleX"```
       
  *Payload Data*
  ```json
@@ -59,7 +59,7 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 
 - **Get Watt Usage**
 
-   Curl "GET","namespace":"Appliance.Control.ConsumptionX"
+   ```Curl "GET","namespace":"Appliance.Control.ConsumptionX"```
 
 *Payload Data*
 ```
@@ -73,7 +73,7 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 
 - **Set module MQTT config** if you have setup your MQTT custom server before, look at [mqtt-config.md](mqtt-config.md)
 
-   Curl "SET","namespace":"Appliance.Config.Key"
+   ```Curl "SET","namespace":"Appliance.Config.Key"```
 
 *Payload data*
 ```json

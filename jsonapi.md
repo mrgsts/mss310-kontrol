@@ -79,3 +79,12 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 ```json
 { "key": { "gateway": { "host": "192.100.100.1", "port": 8883, "secondHost": "192.100.100.1", "secondPort": "8883"}, "key": "**********", "userId": "******" }}
 ```
+
+- **Firmware update request**
+
+Firmware Update to 2.1.9
+
+*PayLoad Data*
+```json
+{"header":{"from":"/app/**********/subscribe","messageId":"**********","method":"SET","namespace":"Appliance.Control.Upgrade","payloadVersion":1,"sign":"**********","timestamp":1552122810},"payload":{"upgrade":{"md5":"09ad830029f2829d8ce009f1973d2c1a","url":"http://bucket-meross-static.meross.com/production/upload/2018/12/19/19/08/31/201812191908318850124.bin"}}}
+```

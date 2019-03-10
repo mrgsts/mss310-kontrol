@@ -82,6 +82,8 @@ curl --http1.1 --header "Content-Type: application/json"   --request POST   --da
 
 - **Firmware update request**
 
+   ```Curl "SET","namespace":"Appliance.Control.Upgrade"```
+   
 Firmware Update to 2.1.9
 
 *PayLoad Data*

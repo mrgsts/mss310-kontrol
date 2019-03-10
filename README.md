@@ -37,8 +37,6 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 It seems posible to decode the FOTA file and get the real binaries if you can get access to the required tools, many of the SDK from Mediatek are license bases and they are not public available.
 
-The process of Firmware Update are initiated by an JSON request to the module
-
 ### - Json API Methods
 
 Page with details and examples of [JSon Requests](jsonapi.md) to control the module
